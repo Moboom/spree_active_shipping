@@ -18,7 +18,7 @@ class Spree::ActiveShippingConfiguration < Spree::Preferences::Configuration
   preference :usps_commercial_base, :boolean, :default => false
   preference :usps_commercial_plus, :boolean, :default => false
   preference :usps_valid, :boolean, :default => false
-  preference :enabled_valid, :boolean, :default => false
+  preference :usps_enabled, :boolean, :default => false
 
   preference :canada_post_login, :string, :default => nil
   preference :canada_post_valid, :boolean, :default => false
