@@ -1,23 +1,26 @@
 class Spree::ActiveShippingConfiguration < Spree::Preferences::Configuration
 
-  preference :ups_login, :string, :default => "aunt_judy"
-  preference :ups_password, :string, :default => "secret"
-  preference :ups_key, :string, :default => "developer_key"
+  preference :ups_login, :string, :default => nil
+  preference :ups_password, :string, :default => nil
+  preference :ups_key, :string, :default => nil
   preference :shipper_number, :string, :default => nil
   preference :ups_valid, :boolean, :default => false
+  preference :ups_enabled, :boolean, :default => false
 
-  preference :fedex_login, :string, :default => "meter_no"
-  preference :fedex_password, :string, :default => "special_sha1_looking_thing_sent_via_email"
-  preference :fedex_account, :string, :default => "account_no"
-  preference :fedex_key, :string, :default => "authorization_key"
+  preference :fedex_login, :string, :default => nil
+  preference :fedex_password, :string, :default => nil
+  preference :fedex_account, :string, :default => nil
+  preference :fedex_key, :string, :default => nil
   preference :fedex_valid, :boolean, :default => false
+  preference :fedex_enabled, :boolean, :default => false
 
-  preference :usps_login, :string, :default => "aunt_judy"
+  preference :usps_login, :string, :default => nil
   preference :usps_commercial_base, :boolean, :default => false
   preference :usps_commercial_plus, :boolean, :default => false
   preference :usps_valid, :boolean, :default => false
+  preference :enabled_valid, :boolean, :default => false
 
-  preference :canada_post_login, :string, :default => "canada_post_login"
+  preference :canada_post_login, :string, :default => nil
   preference :canada_post_valid, :boolean, :default => false
 
   preference :units, :string, :default => "imperial"
